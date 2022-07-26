@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Валентина Добрыднева](https://up.htmlacademy.ru/adaptive/26/user/1860395).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ### Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+#### 1. Зарегистрируйтесь на Гитхабе.
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
