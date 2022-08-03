@@ -6,31 +6,27 @@
   <base href="https://htmlacademy-adaptive.github.io/1860395-sedona-26/2/">
 </head>
 <body class="page__body">
-<header class="main-header">
-  <a class="main-header__logo">
-    <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
+  <nav class="nav">
+    <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
-      <svg class="main-nav__toggle--image" aria-label="true" focusable="false" width="32" height="32"
-           viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M28 6H4v4h24V6ZM28 14H4v4h24v-4ZM28 22H4v4h24v-4Z"/>
-      </svg>
     </button>
-    <div class="main__nav-wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link--current">Главная</a>
+    <div class="nav-wrapper">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current">Главная</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Форма Отзыва</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
+        <li class="nav__item">
+          <a class="nav__link" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
         </li>
       </ul>
     </div>
@@ -49,7 +45,7 @@
     <div class="advantages__wrapper">
       <h2 class="advantages__tagline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages__tagline-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <ul class="advantages__list">
+      <ol class="advantages__list">
         <li class="advantages__item">
           <p class="advantages__item-title">Настоящий городок</p>
           <p class="advantages__item-number">— №1 —</p>
@@ -93,7 +89,7 @@
           <p class="advantages__item-number">— №5 —</p>
           <p class="advantages__item-description">Большинство едет в Гранд каньон и толпится там</p>
         </li>
-      </ul>
+      </ol>
     </div>
   </section>
   <section class="appointment">
@@ -108,7 +104,7 @@
     <h2 class="visually-hidden">Карта проезда</h2>
     <div class="location__wrapper">
       <a class="location__link" href="#">
-        <img class="Location__link-image" src="img/map-mobile.png" width="320" height="350" alt="Карта Седоны">
+        <img class="location__link-image" src="img/map-mobile.png" width="320" height="350" alt="Карта Седоны">
       </a>
     </div>
   </section>
@@ -116,11 +112,11 @@
 <footer class="footer">
   <div class="footer__wrapper">
     <a class="footer__social-search" href="form.html">#visitSedona</a>
-    <ul class="footer__social-list">
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+    <ul class="footer__social-list social">
+      <li class="social__social-item">
+        <a class="social__social-link" href="#">
           <span class="visually-hidden">Вконтакте</span>
-          <svg class="footer__social-link--social-img" aria-hidden="true" focusable="false" width="24" height="24"
+          <svg class="social__social-img" aria-hidden="true" focusable="false" width="24" height="24"
                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -134,20 +130,20 @@
           </svg>
         </a>
       </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+      <li class="social__social-item">
+        <a class="social__social-link" href="#">
           <span class="visually-hidden">Телеграм</span>
-          <svg class="footer__social-link--social-img" aria-hidden="true" focusable="false" width="24" height="24"
+          <svg class="social__social-img" aria-hidden="true" focusable="false" width="24" height="24"
                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/>
           </svg>
         </a>
       </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="#">
+      <li class="social__social-item">
+        <a class="social__social-link" href="#">
           <span class="visually-hidden">YouTube</span>
-          <svg class="footer__social-link--social-img" aria-hidden="true" focusable="false" width="24" height="24"
+          <svg class="social__social-img" aria-hidden="true" focusable="false" width="24" height="24"
                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/>
@@ -157,7 +153,7 @@
     </ul>
     <div class="footer__copyright">
       <a class="footer__copyright-link" href="https://htmlacademy.ru/">Разработано
-        <svg class="footer__copyright-link--copyright-img" focusable="false" aria-hidden="true"
+        <svg class="footer__copyright-img" focusable="false" aria-hidden="true"
              xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
           <path fill="#2E368F"
                 d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
