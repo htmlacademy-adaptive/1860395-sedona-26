@@ -76,7 +76,7 @@
 
 .intro-main__intro-wrapper {
   padding: 90px 10px 167px;
-  background-image: url("../../../img/index/intro/zigzag_mobile.svg"), url("../../../img/index/intro/intro-mobile.jpg");
+  background-image: url("../img/index/intro/zigzag_mobile.svg"), url("../img/index/intro/intro-mobile.jpg");
   background-size: auto, cover;
   background-position: bottom, top;
   background-repeat: no-repeat;
@@ -160,18 +160,17 @@
   background-repeat: no-repeat;
   background-position: top left 18px;
 }
-.sublist-item--house {
-  background-image: url("../../../img/index/advantages/icon-house-small.svg");
-}
-.sublist-item--burger {
-  background-image: url("../../../img/index/advantages/icon-burger-small.svg");
-}
-.sublist-item--souvenirs {
-  background-image: url("../../../img/index/advantages/icon-gift-small.svg");
-}
-
 .sublist-item:last-child {
   padding-bottom: 0;
+}
+.sublist-item--house {
+  background-image: url("../img/index/advantages/icon-house-small.svg");
+}
+.sublist-item--burger {
+  background-image: url("../img/index/advantages/icon-burger-small.svg");
+}
+.sublist-item--souvenirs {
+  background-image: url("../img/index/advantages/icon-gift-small.svg");
 }
 
 .advantages__title {
@@ -192,7 +191,7 @@
 }
 .advantages__item-wrapper--with-img {
   padding-top: 54px;
-  background-image: url("../../../img/index/advantages/white-item.svg");
+  background-image: url("../img/index/advantages/white-item.svg");
   background-position: top;
   background-size: auto, cover;
   background-repeat: no-repeat;
