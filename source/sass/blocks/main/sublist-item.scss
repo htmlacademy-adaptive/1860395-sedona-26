@@ -2,19 +2,18 @@
   padding: 0 12px 30px 65px;
   background-repeat: no-repeat;
   background-position: top left 18px;
+  &:last-child {
+    padding-bottom: 0;
+  }
    &--house {
-    background-image: url("../../../img/index/advantages/icon-house-small.svg");
+    background-image: url("../img/index/advantages/icon-house-small.svg");
   }
   &--burger {
-    background-image: url("../../../img/index/advantages/icon-burger-small.svg");
+    background-image: url("../img/index/advantages/icon-burger-small.svg");
   }
   &--souvenirs {
-    background-image: url("../../../img/index/advantages/icon-gift-small.svg");
+    background-image: url("../img/index/advantages/icon-gift-small.svg");
   }
-}
-
-.sublist-item:last-child {
-  padding-bottom: 0;
 }
 
 
