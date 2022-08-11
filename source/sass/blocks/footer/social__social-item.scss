@@ -1,0 +1,15 @@
+.social__social-item {
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__social-item:not(:last-child) {
+  margin-right: 6px;
+}
+
+
+

@@ -1,0 +1,21 @@
+.social__social-link {
+  border: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+  background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+    & .social__social-img {
+      fill: rgba(255, 255, 255, 0.3)
+    }
+  }
+
+}
+
+
+

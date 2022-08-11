@@ -1,0 +1,18 @@
+.nav__toggle {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 17px;
+  cursor: pointer;
+  right: 20px;
+  z-index: 1;
+  background-color: transparent;
+  border: transparent;
+
+  &--closed {
+   background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z' fill='%2381B3D2'/%3E%3C/svg%3E%0A");
+  }
+  &--open {
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29 6.15 25.72 3 16 12.35 6.28 3 3 6.15l9.72 9.35L3 24.85 6.28 28 16 18.65 25.72 28 29 24.85l-9.72-9.35L29 6.15Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+  }
+}

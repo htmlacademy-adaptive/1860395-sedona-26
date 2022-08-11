@@ -1,0 +1,19 @@
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--blue {
+    &:hover {
+      background-color:  #669EC0;
+    }
+    &:active {
+      background-color: #5496BD;
+      color: rgba(255, 255, 255, 0.3);
+      /*box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);*/
+    }
+    &:disabled {
+      background-color: #E5E5E5;
+    }
+  }
+}

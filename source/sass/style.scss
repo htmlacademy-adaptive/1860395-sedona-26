@@ -1,1 +1,59 @@
-// Начните писать стили здесь
+@use "./blocks/header/header.scss";
+@use "./blocks/header/header__logo";
+@use "./blocks/header/nav";
+@use "./blocks/header/nav__toggle";
+@use "./blocks/header/nav__item";
+@use "./blocks/header/nav__list";
+@use "./blocks/header/nav__link";
+@use "./blocks/main/intro-main";
+@use "./blocks/main/intro-main__intro-wrapper";
+@use "./blocks/main/advantages";
+@use "./blocks/main/advantages__list";
+@use "./blocks/main/advantages__tagline";
+@use "./blocks/main/advantages__tagline-text";
+@use "./blocks/main/advantages__tagline-wrapper";
+@use "./blocks/main/advantages__item";
+@use "./blocks/main/advantages__sublist";
+@use "blocks/main/sublist-item";
+@use "./blocks/main/advantages__title";
+@use "./blocks/main/advantages__description";
+@use "./blocks/main/advantages__item-picture";
+@use "./blocks/main/advantages__item-wrapper";
+@use "./blocks/main/advantages__sublist-title";
+@use "./blocks/main/appointment";
+@use "./blocks/main/appointment__title";
+@use "./blocks/main/appointment__text";
+@use "./blocks/main/appointment__link";
+@use "./blocks/main/location";
+@use "./blocks/main/location__link";
+@use "./blocks/main/location__link-image";
+@use "./blocks/footer/footer__wrapper";
+@use "./blocks/footer/footer__social-search";
+@use "./blocks/footer/footer__social-list";
+@use "./blocks/footer/social";
+@use "./blocks/footer/social__social-item";
+@use "./blocks/footer/social__social-link";
+@use "./blocks/footer/social__social-img";
+@use "./blocks/footer/footer__copyright";
+@use "./blocks/footer/footer__copyright-link";
+@use "./blocks/footer/footer__copyright-img";
+@use "./blocks/link";
+@use "./blocks/list";
+@use "./blocks/wrapper";
+@use "./blocks/page__body";
+@use "./blocks/visually-hidden";
+
+body {
+  background-color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  color: #000000;
+}
+
+
+
+
+

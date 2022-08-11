@@ -1,0 +1,10 @@
+.advantages__item-wrapper {
+  padding: 24px 20px 40px;
+  &--with-img {
+    padding-top: 54px;
+    background-image: url("../../../img/index/advantages/white-item.svg");
+    background-position: top;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+  }
+}
