@@ -1,16 +1,16 @@
 .link {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   &--blue {
     &:hover {
       background-color: $blue-hover;
     }
+
     &:active {
       background-color: $blue-active;
       color: $grey-dark;
     }
+
     &:disabled {
       background-color: $grey;
     }

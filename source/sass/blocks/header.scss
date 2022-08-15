@@ -1,6 +1,7 @@
 .header {
   background-color: $white;
   min-height: 56px;
+
   .header__logo {
     display: block;
     position: absolute;
@@ -8,12 +9,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+
     &--hide {
       display: none;
     }
   }
-}
-
-.nav {
-  width: 100%;
 }
