@@ -1,0 +1,18 @@
+.link {
+  text-decoration: none;
+
+  &--blue {
+    &:hover {
+      background-color: $blue-hover;
+    }
+
+    &:active {
+      background-color: $blue-active;
+      color: $grey-dark;
+    }
+
+    &:disabled {
+      background-color: $grey;
+    }
+  }
+}

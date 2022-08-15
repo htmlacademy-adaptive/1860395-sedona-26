@@ -1,0 +1,35 @@
+.appointment {
+  padding: 38px 29px 49px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.appointment__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.appointment__text {
+  color: $black-lighter;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 32px;
+}
+
+.appointment__link {
+  color: $white;
+  background-color: $blue;
+  padding: 16px 10px;
+  display: flex;
+  justify-content: center;
+  width: 284px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+}
