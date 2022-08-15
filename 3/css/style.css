@@ -3,28 +3,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 body {
@@ -56,7 +42,6 @@ body {
 .nav {
   width: 100%;
 }
-
 .nav--hide {
   display: none;
 }
@@ -68,7 +53,7 @@ body {
 
 .nav__item {
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   position: relative;
 }
 .nav__item:last-child::after {
@@ -115,7 +100,7 @@ body {
   background-size: auto, cover;
   background-position: bottom, top;
   background-repeat: no-repeat;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
 }
 
 .advantages__tagline-wrapper {
@@ -150,7 +135,7 @@ body {
   position: relative;
 }
 .advantages__item--blue {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   color: #ffffff;
 }
 .advantages__item::before {
@@ -161,14 +146,14 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.advantages__item--grey-theme:not(:last-child):after {
+.advantages__item--grey-theme:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 5%;
   width: 90%;
   height: 1px;
-  background-color: #D6D6D6;
+  background-color: #d6d6d6;
 }
 
 .advantages__item-wrapper {
@@ -252,7 +237,7 @@ body {
 
 .appointment__link {
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding: 16px 10px;
   display: flex;
   justify-content: center;
@@ -273,19 +258,19 @@ body {
   padding: 0;
 }
 
-.social__social-item {
+.social__item {
   width: 48px;
   height: 48px;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.social__social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 6px;
 }
 
-.social__social-link {
+.social__link {
   border: transparent;
   width: 100%;
   height: 100%;
@@ -293,35 +278,32 @@ body {
   align-items: center;
   justify-content: center;
 }
-.social__social-link:hover {
-  background-color: #669EC0;
+.social__link:hover {
+  background-color: #669ec0;
 }
-.social__social-link:active {
-  background-color: #5496BD;
+.social__link:active {
+  background-color: #5496bd;
 }
-.social__social-link:active .social__social-img {
+.social__link:active .social__img {
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.social__social-img {
-  fill: white;
+.social__img {
+  fill: #ffffff;
 }
 
 .link {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .link--blue:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
 }
 .link--blue:active {
-  background-color: #5496BD;
+  background-color: #5496bd;
   color: rgba(0, 0, 0, 0.3);
 }
 .link--blue:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .list {
@@ -357,7 +339,6 @@ body {
 }
 
 .footer__social-search {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.24;
@@ -386,24 +367,21 @@ body {
 
 .footer__copyright-link {
   display: flex;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.5;
   align-items: center;
   color: #000000;
   text-transform: uppercase;
 }
 .footer__copyright-link:hover {
-  color: #81B3D2;
+  color: #81b3d2;
 }
 .footer__copyright-link:hover .footer__copyright-img {
-  fill: #81B3D2;
+  fill: #81b3d2;
 }
 .footer__copyright-link:active {
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 .footer__copyright-link:active .footer__copyright-img {
-  fill: #B3B3B3;
+  fill: #b3b3b3;
 }
 /*# sourceMappingURL=style.css.map */
