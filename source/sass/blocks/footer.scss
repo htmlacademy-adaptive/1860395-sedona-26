@@ -1,5 +1,17 @@
 .footer__wrapper {
   padding: 28px 20px 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 120px 36px 104px;
+  }
 }
 
 .footer__social-search {
@@ -11,10 +23,18 @@
   width: 166px;
   margin: 0 auto 33px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__social-list {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright {

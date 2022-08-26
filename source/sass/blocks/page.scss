@@ -1,3 +1,8 @@
 .page__body {
   width: 100%;
+
+  @media ($desktop-width) {
+    background-color: #E7E5E5;
+    box-shadow: 0 0 15px #e5e5e5;
+  }
 }

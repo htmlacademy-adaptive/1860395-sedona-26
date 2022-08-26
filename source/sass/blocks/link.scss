@@ -4,15 +4,27 @@
   &--blue {
     &:hover {
       background-color: $blue-hover;
+
+      @media (min-width: $tablet-width) {
+        background-color: transparent;
+        color: $blue;
+      }
     }
 
     &:active {
       background-color: $blue-active;
       color: $grey-dark;
+
+      @media (min-width: $tablet-width) {
+        background-color: transparent;
+        color: $grey-active;
+      }
     }
 
     &:disabled {
       background-color: $grey;
+
     }
   }
 }
+

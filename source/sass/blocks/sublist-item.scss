@@ -3,19 +3,31 @@
   background-repeat: no-repeat;
   background-position: top left 18px;
 
-  &:last-child {
-    padding-bottom: 0;
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+    min-height: 330px;
+    padding: 0;
+    background-position: top 60px left 90px;
   }
 
+  &:last-child {
+    padding-bottom: 52px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+    }
+
+
   &--house {
-    background-image: url("../img/index/advantages/icon-house-small.svg");
+    background-image: url("../img/index/advantages/house-picture.svg");
   }
 
   &--burger {
-    background-image: url("../img/index/advantages/icon-burger-small.svg");
+    background-image: url("../img/index/advantages/burger-picture.svg");
   }
 
   &--souvenirs {
-    background-image: url("../img/index/advantages/icon-gift-small.svg");
+    background-image: url("../img/index/advantages/souvenirs-picture.svg");
   }
 }
