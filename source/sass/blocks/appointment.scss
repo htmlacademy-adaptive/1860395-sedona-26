@@ -54,4 +54,17 @@
     width: 458px;
     margin: 0 auto;
   }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
 }

@@ -9,7 +9,7 @@
 <body class="page__body">
 <header class="header">
   <div class="wrapper header-wrapper">
-    <a class="header__logo">
+    <a class="header__logo ">
       <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
     </a>
     <button class="btn-toggle btn-toggle--closed btn-toggle--hide" type="button">
@@ -50,11 +50,13 @@
       </div>
       <ul class="advantages__list list">
         <li class="advantages__item advantages__item--blue">
+          <div class="advantages__item-wrapper--blue">
           <div class="advantages__item-wrapper advantages__item-wrapper--with-img">
             <p class="advantages__title ">Настоящий городок</p>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="advantages__item-picture" src="img/index/advantages/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
+          </div>
           <ul class="advantages__sublist list">
             <li class="advantages__sublist-item sublist-item sublist-item--house">
               <h3 class="advantages__sublist-title">Жилье</h3>
@@ -71,11 +73,13 @@
           </ul>
         </li>
         <li class="advantages__item advantages__item--blue">
-          <div class="advantages__item-wrapper advantages__item-wrapper--with-img">
+          <div class="advantages__item-wrapper--blue">
+          <div class="advantages__item-wrapper advantages__item-wrapper--with-img advantages__item-wrapper--without-img">
             <p class="advantages__title">Там есть мост дьявола</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__item-picture advantages__item-picture--change-order" src="img/index/advantages/advantages-photo-2.jpg" width="800" height="384" alt="Мост дьявола">
+            <img class="advantages__item-picture advantages__item-picture--change-order" src="img/index/advantages/advantages-photo-2.jpg" width="800" height="384" alt="Мост дьявола">
+          </div>
         </li>
         <li class="advantages__item advantages__item--grey-theme">
           <div class="advantages__item-wrapper">
@@ -103,7 +107,7 @@
       <h2 class="appointment__title">Заинтересовались?</h2>
       <p class="appointment__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <a class="appointment__link link link--blue" href="#">Найти гостиницу</a>
+      <a class="appointment__link link" href="#">Найти гостиницу</a>
     </div>
   </section>
   <section class="location">
