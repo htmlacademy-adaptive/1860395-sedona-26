@@ -2,7 +2,13 @@
   padding: 90px 10px 167px;
   background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-intro-desktop.jpg");
   background-size: auto, cover;
+  max-width: 100%;
   background-position: bottom, top;
   background-repeat: no-repeat;
   background-color: $blue;
+}
+
+.intro-main__image {
+  object-fit: contain;
+  max-width: 80%;
 }

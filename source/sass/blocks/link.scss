@@ -1,6 +1,11 @@
 .link {
   text-decoration: none;
 
+  &:focus {
+    outline: 1px solid $black;
+    border-right: 2px;
+  }
+
   &--blue {
     &:hover {
       background-color: $blue-hover;
@@ -23,6 +28,21 @@
 
     &:disabled {
       background-color: $grey;
+    }
+  }
+
+  &--link-social {
+    &:hover {
+      @media (min-width: $tablet-width) {
+        background-color: $blue-hover;
+      }
+    }
+
+    &:active {
+      @media (min-width: $tablet-width) {
+        background-color: $blue-active;
+        color: $grey-dark;
+      }
     }
   }
 }
