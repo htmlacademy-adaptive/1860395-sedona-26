@@ -241,14 +241,6 @@ body {
     width: 100%;
   }
 }
-.advantages__item::before {
-  counter-increment: list 1;
-  content: "-№" counter(list) "-";
-  position: absolute;
-  top: 66px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 .advantages__item--grey-theme:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -267,6 +259,14 @@ body {
 .advantages__item-wrapper {
   padding: 24px 20px 40px;
 }
+.advantages__item-wrapper::before {
+  counter-increment: list 1;
+  content: "-№" counter(list) "-";
+  position: absolute;
+  top: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media (min-width: 768px) {
   .advantages__item-wrapper {
     padding: 42px 40px;
@@ -281,7 +281,7 @@ body {
   padding-top: 54px;
   background-image: url("../img/index/advantages/white-img.svg");
   background-position: top;
-  background-size: auto, cover;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -294,6 +294,14 @@ body {
 @media (1280px) {
   .advantages__item-wrapper--with-img {
     padding: 48px 60px;
+  }
+}
+.advantages__item-wrapper--without-img {
+  background-image: none;
+}
+@media (min-width: 768px) {
+  .advantages__item-wrapper--blue {
+    display: flex;
   }
 }
 
@@ -445,6 +453,16 @@ body {
     margin: 0 auto;
   }
 }
+.appointment__link:hover {
+  background-color: #669ec0;
+}
+.appointment__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+.appointment__link:disabled {
+  background-color: #e5e5e5;
+}
 
 .social {
   display: flex;
@@ -578,21 +596,15 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 166px;
-  margin: 0 auto 33px;
   color: #000000;
-}
-@media (min-width: 768px) {
-  .footer__social-search {
-    margin: 0;
-  }
 }
 
 .footer__social-list {
-  margin: 0 0 40px;
+  margin: 33px 0 40px;
 }
 @media (min-width: 768px) {
   .footer__social-list {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
