@@ -8,9 +8,9 @@
   <base href="https://htmlacademy-adaptive.github.io/1860395-sedona-26/4/">
 </head>
 <body class="page__body">
+<div class="wrapper">
 <header class="header">
-  <div class="wrapper header-wrapper">
-    <a class="header__logo">
+    <a class="header__logo logo">
       <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
     </a>
     <button class="btn-toggle btn-toggle--closed btn-toggle--hide" type="button">
@@ -22,42 +22,34 @@
           <a class="nav__link link nav__link--current link--grey">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link link--blue link--grey" href="catalog.html">Фото и видео</a>
+          <a class="nav__link link link--accent link--grey" href="catalog.html">Фото и видео</a>
         </li>
         <li class="nav__item nav__item--right">
-          <a class="nav__link link link--blue link--grey" href="form.html">Форма Отзыва</a>
+          <a class="nav__link link link--accent link--grey" href="form.html">Форма Отзыва</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link link--blue link--grey" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
+          <a class="nav__link link link--accent link--grey" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
         </li>
       </ul>
     </nav>
-  </div>
 </header>
 <main class="main-container">
   <section class="intro-main">
-    <div class="wrapper">
       <div class="intro-main__intro-wrapper">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="intro-main__image" src="img/index/intro/intro-text.svg" width="461" height="350" alt="Седона круче Гранд-Каньона">
       </div>
-    </div>
   </section>
   <section class="advantages">
-    <div class="wrapper">
-      <div class="advantages__tagline-wrapper">
         <h2 class="advantages__tagline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="advantages__tagline-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
       <ul class="advantages__list list">
-        <li class="advantages__item advantages__item--blue">
-          <div class="advantages__item-wrapper--blue">
+        <li class="advantages__item advantages__item--accent">
           <div class="advantages__item-wrapper advantages__item-wrapper--with-img">
             <p class="advantages__title ">Настоящий городок</p>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="advantages__item-picture" src="img/index/advantages/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
-          </div>
           <ul class="advantages__sublist list">
             <li class="advantages__sublist-item sublist-item sublist-item--house">
               <h3 class="advantages__sublist-title">Жилье</h3>
@@ -73,14 +65,12 @@
             </li>
           </ul>
         </li>
-        <li class="advantages__item advantages__item--blue">
-          <div class="advantages__item-wrapper--blue">
+        <li class="advantages__item advantages__item--accent">
           <div class="advantages__item-wrapper advantages__item-wrapper--with-img advantages__item-wrapper--without-img">
             <p class="advantages__title">Там есть мост дьявола</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
             <img class="advantages__item-picture advantages__item-picture--change-order" src="img/index/advantages/advantages-photo-2.jpg" width="800" height="384" alt="Мост дьявола">
-          </div>
         </li>
         <li class="advantages__item advantages__item--grey-theme">
           <div class="advantages__item-wrapper">
@@ -101,29 +91,24 @@
           </div>
         </li>
       </ul>
-    </div>
   </section>
   <section class="appointment">
-    <div class="wrapper">
       <h2 class="appointment__title">Заинтересовались?</h2>
       <p class="appointment__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
       <a class="appointment__link link" href="#">Найти гостиницу</a>
-    </div>
   </section>
   <section class="location">
     <h2 class="visually-hidden">Карта проезда</h2>
-    <div class="wrapper">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050597664!2d-111.83015799809978!3d34.85437338103204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661373099590!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
   </section>
 </main>
 <footer class="footer">
-  <div class="wrapper footer__wrapper">
+  <div class="footer__wrapper">
     <a class="footer__social-search link" href="catalog.html">#visitSedona</a>
     <ul class="footer__social-list social">
       <li class="social__item">
-        <a class="social__link link link--blue link--social" href="#">
+        <a class="social__link link link--accent link--link-social" href="#">
           <span class="visually-hidden">Вконтакте</span>
           <svg class="social__img" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
@@ -139,7 +124,7 @@
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link link link--blue link--link-social" href="#">
+        <a class="social__link link link--accent link--link-social" href="#">
           <span class="visually-hidden">Телеграм</span>
           <svg class="social__img" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -148,7 +133,7 @@
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link link link--blue link--link-social" href="#">
+        <a class="social__link link link--accent link--link-social" href="#">
           <span class="visually-hidden">YouTube</span>
           <svg class="social__img" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -167,5 +152,6 @@
     </div>
   </div>
 </footer>
+</div>
 </body>
 </html>
