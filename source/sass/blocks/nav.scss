@@ -46,7 +46,7 @@
     }
   }
 
-  &--right {
+  &:nth-last-child(2) {
     @media (min-width: $tablet-width) {
       margin-left: auto;
     }

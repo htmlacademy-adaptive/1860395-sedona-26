@@ -80,6 +80,7 @@
 
 .advantages__item-wrapper {
   padding: 24px 20px 40px;
+  position: relative;
 
   &::before {
     counter-increment: list 1;
@@ -157,7 +158,10 @@
 .advantages__description {
   text-transform: uppercase;
   margin: 0;
-  padding: 0 25px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 25px 15px;
+  }
 }
 
 .advantages__sublist {

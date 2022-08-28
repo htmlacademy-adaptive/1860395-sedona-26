@@ -1,4 +1,4 @@
-.intro-main__intro-wrapper {
+.intro-main {
   padding: 90px 10px 167px;
   background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-intro-desktop.jpg");
   background-size: auto, cover;
@@ -11,4 +11,5 @@
 .intro-main__image {
   object-fit: contain;
   max-width: 80%;
+  margin: 0 auto;
 }
