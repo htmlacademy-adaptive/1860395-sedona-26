@@ -1,5 +1,6 @@
-.footer__wrapper {
+.footer {
   padding: 28px 20px 22px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -32,13 +33,6 @@
   }
 }
 
-.footer__copyright {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer__copyright-img {
   fill: $black;
   margin-left: 10px;
@@ -50,6 +44,7 @@
   align-items: center;
   color: $black;
   text-transform: uppercase;
+  justify-content: center;
 
   &:hover {
     color: $blue;

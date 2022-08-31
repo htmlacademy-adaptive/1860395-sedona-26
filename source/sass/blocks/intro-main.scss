@@ -6,10 +6,11 @@
   background-position: bottom, top;
   background-repeat: no-repeat;
   background-color: $blue;
+  display: flex;
+  justify-content: center;
 }
 
 .intro-main__image {
   object-fit: contain;
   max-width: 80%;
-  margin: 0 auto;
 }

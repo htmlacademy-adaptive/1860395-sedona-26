@@ -30,19 +30,4 @@
       background-color: $grey;
     }
   }
-
-  &--link-social {
-    &:hover {
-      @media (min-width: $tablet-width) {
-        background-color: $blue-hover;
-      }
-    }
-
-    &:active {
-      @media (min-width: $tablet-width) {
-        background-color: $blue-active;
-        color: $grey-dark;
-      }
-    }
-  }
 }
