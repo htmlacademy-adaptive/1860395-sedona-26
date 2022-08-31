@@ -1,7 +1,15 @@
 .wrapper {
-  text-align: center;
   box-sizing: border-box;
-  width: 320px;
   margin: 0 auto;
-  position: relative;
+  max-width: $desktop-width;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 0 15px $grey;
+  }
+}
+
+.wrapper iframe {
+  display: flex;
+  width: 100%;
 }

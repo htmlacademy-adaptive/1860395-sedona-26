@@ -1,6 +1,12 @@
 .nav {
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &--hide {
     display: none;
   }
@@ -9,12 +15,42 @@
 .nav__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .nav__item {
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   background-color: $blue;
   position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $tablet-width) {
+      margin-right: 3%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 12%;
+    }
+  }
+
+  &:nth-last-child(2) {
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+    }
+  }
 
   &:last-child::after {
     content: "";
@@ -24,15 +60,33 @@
     position: absolute;
     top: 89%;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      background: transparent;
+    }
   }
 }
 
 .nav__link {
-  text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
   color: $white;
   padding: 17px 5px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      color: $brown-current;
+    }
+  }
 }

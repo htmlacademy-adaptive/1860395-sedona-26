@@ -1,5 +1,18 @@
-.footer__wrapper {
+.footer {
   padding: 28px 20px 22px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 120px 36px 104px;
+  }
 }
 
 .footer__social-search {
@@ -9,19 +22,15 @@
   text-align: center;
   text-transform: uppercase;
   width: 166px;
-  margin: 0 auto 33px;
   color: $black;
 }
 
 .footer__social-list {
-  margin: 0 0 40px;
-}
+  margin: 33px 0 40px;
 
-.footer__copyright {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__copyright-img {
@@ -35,6 +44,7 @@
   align-items: center;
   color: $black;
   text-transform: uppercase;
+  justify-content: center;
 
   &:hover {
     color: $blue;

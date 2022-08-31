@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+
 .social__item {
   width: 48px;
   height: 48px;
@@ -29,17 +30,25 @@
 
   &:hover {
     background-color: $blue-hover;
+
+    @media ($tablet-width) {
+      @include colors($blue-hover);
+    }
   }
 
   &:active {
     background-color: $blue-active;
 
-    & .social__img {
+    @media ($tablet-width) {
+      @include colors($blue-active);
+    }
+
+    .social__img {
       fill: $grey-dark;
     }
   }
-}
 
-.social__img {
-  fill: $white;
+  .social__img {
+    fill: $white;
+  }
 }

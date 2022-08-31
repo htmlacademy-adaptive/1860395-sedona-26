@@ -1,8 +1,16 @@
-.intro-main__intro-wrapper {
+.intro-main {
   padding: 90px 10px 167px;
-  background-image: url("../img/index/intro/zigzag_mobile.svg"), url("../img/index/intro/intro-mobile.jpg");
+  background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-intro-desktop.jpg");
   background-size: auto, cover;
+  max-width: 100%;
   background-position: bottom, top;
   background-repeat: no-repeat;
   background-color: $blue;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-main__image {
+  object-fit: contain;
+  max-width: 80%;
 }

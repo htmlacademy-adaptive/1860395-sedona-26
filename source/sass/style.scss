@@ -1,6 +1,8 @@
 @import "variable";
+@import "viewports";
 @import "fonts";
 @import "global";
+@import "mixins";
 @import "./blocks/header";
 @import "./blocks/nav";
 @import "./blocks/btn-toggle";
@@ -15,3 +17,4 @@
 @import "./blocks/page";
 @import "./blocks/visually-hidden";
 @import "./blocks/footer";
+@import "./blocks/logo";

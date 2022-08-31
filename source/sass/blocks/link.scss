@@ -1,14 +1,29 @@
 .link {
   text-decoration: none;
 
-  &--blue {
+  &:focus {
+    outline: 1px solid $black;
+    border-right: 2px;
+  }
+
+  &--accent {
     &:hover {
       background-color: $blue-hover;
+
+      @media (min-width: $tablet-width) {
+        background-color: transparent;
+        color: $blue;
+      }
     }
 
     &:active {
       background-color: $blue-active;
       color: $grey-dark;
+
+      @media (min-width: $tablet-width) {
+        background-color: transparent;
+        color: $grey-active;
+      }
     }
 
     &:disabled {

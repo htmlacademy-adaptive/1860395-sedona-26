@@ -1,7 +1,14 @@
 .appointment {
   padding: 38px 29px 49px;
-  width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 134px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 300px 58px;
+  }
 }
 
 .appointment__title {
@@ -10,6 +17,13 @@
   line-height: 1.24;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 0.87;
+    margin: 0 auto 44px;
+  }
 }
 
 .appointment__text {
@@ -17,6 +31,10 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 41px;
+  }
 }
 
 .appointment__link {
@@ -25,11 +43,28 @@
   padding: 16px 10px;
   display: flex;
   justify-content: center;
-  width: 284px;
+  /*width: 284px;*/
+  max-width: 100%;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.24;
   text-transform: uppercase;
-  text-decoration: none;
-  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
 }
