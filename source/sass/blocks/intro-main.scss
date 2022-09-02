@@ -1,6 +1,6 @@
 .intro-main {
   padding: 90px 10px 167px;
-  background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-intro-desktop.jpg");
+  background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-mobile@1x.jpg");
   background-size: auto, cover;
   max-width: 100%;
   background-position: bottom, top;
@@ -8,6 +8,21 @@
   background-color: $blue;
   display: flex;
   justify-content: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-mobile@2x.jpg");
+    background-size: auto, cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-tablet@1x.jpg");
+    background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-tablet@2x.jpg");
+      background-size: auto, cover;
+    }
+  }
 }
 
 .intro-main__image {

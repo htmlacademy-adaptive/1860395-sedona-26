@@ -103,7 +103,7 @@
     padding-top: 54px;
     background-image: url("../img/index/advantages/white-img.svg");
     background-position: top;
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -132,12 +132,19 @@
   }
 }
 
-.advantages__item-picture {
-  max-width: 100%;
-  object-fit: none;
+.advantages__image-wrapper {
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 63%;
+    width: 57%;
+  }
+}
+
+.advantages__item-picture {
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
     order: 0;
   }
 }
