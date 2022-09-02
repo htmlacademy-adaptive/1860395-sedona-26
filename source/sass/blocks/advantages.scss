@@ -81,6 +81,7 @@
 .advantages__item-wrapper {
   padding: 24px 20px 40px;
   position: relative;
+  box-sizing: border-box;
 
   &::before {
     counter-increment: list 1;
@@ -143,7 +144,6 @@
 .advantages__item-picture {
   max-width: 100%;
   display: block;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 100%;
