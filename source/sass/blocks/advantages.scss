@@ -138,6 +138,7 @@
 
   @media (min-width: $tablet-width) {
     width: 66.66%;
+    order: 0;
   }
 }
 
@@ -147,7 +148,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    order: 0;
+    height: auto;
   }
 }
 
