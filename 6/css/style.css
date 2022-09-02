@@ -278,6 +278,7 @@ body {
 .advantages__item-wrapper {
   padding: 24px 20px 40px;
   position: relative;
+  box-sizing: border-box;
 }
 .advantages__item-wrapper::before {
   counter-increment: list 1;
@@ -336,18 +337,18 @@ body {
 @media (min-width: 768px) {
   .advantages__image-wrapper {
     width: 66.66%;
+    order: 0;
   }
 }
 
-.advantages__item-picture {
+.advantages__img {
   max-width: 100%;
   display: block;
-  box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  .advantages__item-picture {
+  .advantages__img {
     width: 100%;
-    order: 0;
+    height: auto;
   }
 }
 
