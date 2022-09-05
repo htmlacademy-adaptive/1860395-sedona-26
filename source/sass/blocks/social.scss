@@ -44,11 +44,11 @@
     }
 
     .social__img {
-      fill: $grey-dark;
+      color: $white-active;
     }
   }
+}
 
-  .social__img {
-    fill: $white;
-  }
+.social__img {
+  color: $white;
 }

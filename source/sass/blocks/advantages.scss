@@ -145,6 +145,7 @@
 .advantages__img {
   max-width: 100%;
   display: block;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     width: 100%;
