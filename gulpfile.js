@@ -23,7 +23,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -68,12 +68,12 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src('source/img/*.svg')
+  gulp.src(['source/img/*.svg', '!source/img/icons*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/sprite.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -141,7 +141,7 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
+   // scripts,
     svg,
     sprite,
     createWebp
@@ -158,7 +158,7 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
+   // scripts,
     svg,
     sprite,
     createWebp

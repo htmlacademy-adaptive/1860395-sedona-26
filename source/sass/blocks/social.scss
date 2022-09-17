@@ -31,7 +31,7 @@
   &:hover {
     background-color: $blue-hover;
 
-    @media ($tablet-width) {
+    @media (min-width: $tablet-width) {
       @include colors($blue-hover);
     }
   }
@@ -39,7 +39,7 @@
   &:active {
     background-color: $blue-active;
 
-    @media ($tablet-width) {
+    @media (min-width: $tablet-width) {
       @include colors($blue-active);
     }
 
