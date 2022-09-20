@@ -1,5 +1,5 @@
 .appointment {
-  padding: 38px 29px 49px;
+  padding: 38px 18px 49px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +22,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 0.87;
-    margin: 0 auto 44px;
+    margin: 0 auto 29px;
   }
 }
 
@@ -33,7 +33,11 @@
   margin: 0 0 32px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 41px;
+    margin: 0 auto 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 47px;
   }
 }
 
@@ -50,7 +54,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 458px;
+    width: 442px;
     margin: 0 auto;
   }
 

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width-device-width, initial-scale=1">
   <meta name="description" content="Туристический сайт">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon"  href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
@@ -21,7 +23,7 @@
     <button class="btn-toggle btn-toggle--closed btn-toggle--hide" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="nav">
+    <nav class="nav--hide">
       <ul class="nav__list list">
         <li class="nav__item">
           <a class="nav__link nav__link--current link" href="#">Главная</a>
@@ -44,13 +46,13 @@
       <img class="intro-main__image" src="img/index/intro/intro-text.svg" width="461" height="350" alt="Седона круче Гранд-Каньона">
     </section>
     <section class="advantages">
-      <h2 class="advantages__tagline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h2 class="advantages__tagline">Седона — небольшой городок в Аризоне,&nbsp;<br> заслуживающий большего!</h2>
       <p class="advantages__tagline-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="advantages__list list">
         <li class="advantages__item advantages__item--accent">
           <div class="advantages__item-wrapper advantages__item-wrapper--with-img">
-            <p class="advantages__title ">Настоящий городок</p>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="advantages__title ">Настоящий&nbsp;<br>городок</p>
+            <p class="advantages__description">Седона не аттракцион для туристов,&nbsp;<br>там течет своя жизнь</p>
           </div>
           <div class="advantages__image-wrapper">
           <picture>
@@ -65,23 +67,23 @@
           <ul class="advantages__sublist list">
             <li class="advantages__sublist-item sublist-item sublist-item--house">
               <h3 class="advantages__sublist-title">Жилье</h3>
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="advantages__description">Рекомендуем пожить в настоящем&nbsp;<br>мотеле, все как в кино!</p>
             </li>
             <li class="advantages__sublist-item sublist-item sublist-item--burger">
               <h3 class="advantages__sublist-title">Еда</h3>
-              <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages__description">Всегда заказывайте фирменный бургер,&nbsp;<br>вы не разочаруетесь!</p>
             </li>
             <li class="advantages__sublist-item sublist-item sublist-item--souvenirs">
               <h3 class="advantages__sublist-title">Сувениры</h3>
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              <p class="advantages__description">Не только китайского,&nbsp;<br>но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="advantages__item advantages__item--accent">
           <div
             class="advantages__item-wrapper advantages__item-wrapper--with-img advantages__item-wrapper--without-img">
-            <p class="advantages__title">Там есть мост дьявола</p>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="advantages__title">Там есть&nbsp;<br>мост дьявола</p>
+            <p class="advantages__description">Да, по нему можно пройти!&nbsp;<br>Если вы осмелитесь, конечно</p>
           </div>
           <div class="advantages__image-wrapper">
           <picture>
@@ -96,27 +98,27 @@
         </li>
         <li class="advantages__item advantages__item--grey-theme">
           <div class="advantages__item-wrapper">
-            <p class="advantages__title">Небольшая площадь</p>
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
+            <p class="advantages__title">Небольшая&nbsp;<br>площадь</p>
+            <p class="advantages__description">Все интересные места находятся очень&nbsp;<br>близко</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--grey-theme">
           <div class="advantages__item-wrapper">
-            <p class="advantages__title">Красивая дорога</p>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages__title">Красивая&nbsp;<br>дорога</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем&nbsp;<br>не скучно!</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--grey-theme">
           <div class="advantages__item-wrapper">
             <p class="advantages__title">Мало туристов</p>
-            <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
+            <p class="advantages__description">Большинство едет в Гранд каньон и&nbsp;<br>толпится там</p>
           </div>
         </li>
       </ul>
     </section>
     <section class="appointment">
       <h2 class="appointment__title">Заинтересовались?</h2>
-      <p class="appointment__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="appointment__text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
       <a class="appointment__link link" href="#">Найти гостиницу</a>
     </section>

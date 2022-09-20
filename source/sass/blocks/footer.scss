@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 60px;
+    padding: 36px 53px 36px 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +36,12 @@
 .footer__copyright-img {
   fill: $black;
   margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 37px;
+    height: auto;
+    margin-left: 6px;
+  }
 }
 
 .footer__copyright-link {

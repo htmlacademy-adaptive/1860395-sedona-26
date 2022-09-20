@@ -1,5 +1,5 @@
 .intro-main {
-  padding: 90px 10px 167px;
+  padding: 19px 0;
   background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-mobile@1x.jpg");
   background-size: auto, cover;
   max-width: 100%;
@@ -17,6 +17,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-tablet@1x.jpg");
     background-size: auto, cover;
+    padding: 78px 10px 92px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/intro/zigzag-image.svg"), url("../img/index/intro/back-tablet@2x.jpg");
@@ -27,5 +28,5 @@
 
 .intro-main__image {
   object-fit: contain;
-  max-width: 80%;
+  max-width: 88%;
 }
