@@ -8,6 +8,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 48px 0 0;
+
+    & br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +31,7 @@
     font-size: 21px;
     line-height: 1.23;
     padding: 0;
+    margin: 0 0 30px;
   }
 }
 
@@ -83,7 +88,7 @@
   &--grey-theme:not(:last-child)::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 6%;
     left: 5%;
     width: 90%;
     height: 1px;
@@ -99,14 +104,22 @@
   padding: 24px 20px 37px;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &--space {
+    margin: -10px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
 
   &::before {
     counter-increment: list 1;
     content: "-№" counter(list) "-";
-    position: absolute;
-    top: 112px;
-    left: 50%;
-    transform: translateX(-50%);
+    order: 1;
+    margin: 0 0 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -119,7 +132,7 @@
 
   &--with-img {
     padding-top: 75px;
-    background-image: url("../img/index/advantages/white-img.svg");
+    background-image: url("../img/index/advantages/white-triangle.svg");
     background-position: top;
     background-size: auto;
     background-repeat: no-repeat;
@@ -141,6 +154,7 @@
 
     @media (min-width: $tablet-width) {
       order: 1;
+      padding: 52px 10px 34px;
     }
   }
 
@@ -176,17 +190,20 @@
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
-  margin: 0 0 50px;
+  margin: 0 0 14px;
+  order: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.23;
+    margin: 0 0 16px;
   }
 }
 
 .advantages__description {
   text-transform: uppercase;
   margin: 0;
+  order: 2;
 
   @media (min-width: $desktop-width) {
     padding: 0 17px 10px;

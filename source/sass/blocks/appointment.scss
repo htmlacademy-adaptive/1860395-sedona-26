@@ -1,6 +1,10 @@
 .appointment {
-  padding: 38px 18px 49px;
+  padding: 13px 18px 49px;
   margin: 0 auto;
+
+  & br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 61px 134px 58px;
