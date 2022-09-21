@@ -12,4 +12,10 @@
 .wrapper iframe {
   display: flex;
   width: 100%;
+  height: auto;
+  min-height: 361px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 351px;
+  }
 }
