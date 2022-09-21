@@ -20,10 +20,12 @@
     <a class="logo" href="#">
       <img class="logo__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
     </a>
+    <!--Для смены внешнего вида кнопки нужно заменить модификатор --closed на --open-->
     <button class="btn-toggle btn-toggle--closed btn-toggle--hide" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="nav--hide">
+    <!--Для просмотра меню мобильной версии нужно убрать модификатор --hide у nav и добавить --hide к logo-->
+    <nav class="nav nav--hide">
       <ul class="nav__list list">
         <li class="nav__item">
           <a class="nav__link nav__link--current link" href="#">Главная</a>
