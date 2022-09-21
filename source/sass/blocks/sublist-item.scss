@@ -7,7 +7,8 @@
   @media (min-width: $tablet-width) {
     width: 33.3%;
     min-height: 330px;
-    padding: 0;
+    padding: 0 10px 0;
+    box-sizing: border-box;
     background-position: top 23% left 50%;
     background-size: 75px 72px;
   }

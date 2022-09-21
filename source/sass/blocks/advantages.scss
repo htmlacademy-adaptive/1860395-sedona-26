@@ -30,7 +30,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.23;
-    padding: 0;
+    padding: 0 10px;
     margin: 0 0 30px;
   }
 }
@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 55px;
-    padding: 0;
+    padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
