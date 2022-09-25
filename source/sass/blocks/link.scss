@@ -1,11 +1,6 @@
 .link {
   text-decoration: none;
 
-  &:focus {
-    outline: 1px solid $black;
-    border-right: 2px;
-  }
-
   &--accent {
     &:hover {
       background-color: $blue-hover;

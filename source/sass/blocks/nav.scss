@@ -9,6 +9,10 @@
 
   &--hide {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 }
 
@@ -42,7 +46,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 12%;
+      margin-right: 14%;
     }
   }
 

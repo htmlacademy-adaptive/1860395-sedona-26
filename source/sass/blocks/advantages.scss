@@ -1,6 +1,22 @@
 .advantages {
-  padding: 32px 0 16px;
   text-align: center;
+  padding: 35px 0 0;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 0 0;
+
+    & br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 0 0;
+  }
 }
 
 .advantages__tagline {
@@ -8,11 +24,14 @@
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
-  margin: 0 0 35px;
+  margin: 0 0 34px;
+  padding: 0 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.23;
+    padding: 0 10px;
+    margin: 0 0 30px;
   }
 }
 
@@ -20,14 +39,17 @@
   font-weight: 400;
   color: $black-lighter;
   text-transform: uppercase;
-  margin: 0 0 16px;
+  margin: 0;
+  padding: 0 9px 10px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 55px;
+    padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 44px;
+    padding: 0;
   }
 }
 
@@ -66,7 +88,7 @@
   &--grey-theme:not(:last-child)::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 6%;
     left: 5%;
     width: 90%;
     height: 1px;
@@ -79,17 +101,25 @@
 }
 
 .advantages__item-wrapper {
-  padding: 24px 20px 40px;
+  padding: 24px 20px 37px;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &--space {
+    margin: -10px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
 
   &::before {
     counter-increment: list 1;
     content: "-№" counter(list) "-";
-    position: absolute;
-    top: 66px;
-    left: 50%;
-    transform: translateX(-50%);
+    order: 1;
+    margin: 0 0 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -97,12 +127,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 42px 50px 60px;
+    padding: 42px 50px 32px;
   }
 
   &--with-img {
-    padding-top: 54px;
-    background-image: url("../img/index/advantages/white-img.svg");
+    padding-top: 75px;
+    background-image: url("../img/index/advantages/white-triangle.svg");
     background-position: top;
     background-size: auto;
     background-repeat: no-repeat;
@@ -110,19 +140,21 @@
     @media (min-width: $tablet-width) {
       background-image: none;
       width: 33.3%;
-      padding: 42px 32px;
+      padding: 42px 32px 22px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 48px 60px;
+      padding: 48px 30px;
     }
   }
 
   &--without-img {
     background-image: none;
+    padding: 36px 10px 34px;
 
     @media (min-width: $tablet-width) {
       order: 1;
+      padding: 52px 10px 34px;
     }
   }
 
@@ -158,20 +190,23 @@
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
-  margin: 0 0 49px;
+  margin: 0 0 14px;
+  order: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.23;
+    margin: 0 0 16px;
   }
 }
 
 .advantages__description {
   text-transform: uppercase;
   margin: 0;
+  order: 2;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 25px 15px;
+  @media (min-width: $desktop-width) {
+    padding: 0 17px 10px;
   }
 }
 
@@ -196,9 +231,10 @@
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
-  margin: 0 0 16px;
+  margin: 0 0 17px;
 
   @media (min-width: $tablet-width) {
     padding-top: 158px;
+    margin: 0 0 23px;
   }
 }
